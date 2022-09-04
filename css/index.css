@@ -21,6 +21,7 @@ header {
 	background: url(../imgs/header-food.jpg);
 	background-size: cover;
 	color: white;
+	width: 100%;
 }
 header h1 {
 	font-size: 70px;
@@ -43,7 +44,7 @@ section .row {
 	height: 25vh;
 	justify-content: space-evenly;
 	padding: 10px 0;
-	width: 100%;
+	width: 90%;
 }
 section .row:hover .plate {
 	filter: blur(3px);
@@ -59,7 +60,7 @@ section .row:hover .plate:hover {
 }
 section .row .plate {
 	align-items: center;
-	color: #000000;
+	color: #ffffff;
 	display: flex;
 	font-size: 50px;
 	font-weight: 600;
