@@ -9,37 +9,78 @@ html {
 	line-height: 1.6rem;
 }
 body {
-	width: 100vw;
-	height: 100vh;
-}
-header {
 	align-items: center;
-	background: #ac45256c;
+	background: rgba(0, 0, 0, 0.096);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 30vh;
 }
-header h1 {
-	font-size: 50px;
-	padding-top: 25px;
+.container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	line-height: 2.2em;
+	justify-content: center;
+	height: 100%;
+	width: 80%;
 }
-header img {
-	border-radius: 48%;
-	display: block;
+.container .grey-container img {
+	align-items: center;
+	display: flex;
+	border-radius: 50%;
+	justify-content: center;
 	height: auto;
-	margin: 10px 0;
-	padding-bottom: 10px;
 	width: 250px;
 }
-.instructions {
-	background: #c1d5a4;
+.container .grey-container {
+	align-items: center;
+	border: 5px solid #f4f4f4;
+	background: #f4f4f4;
 	display: flex;
 	flex-direction: column;
-	height: 70vh;
+	justify-content: center;
+	margin-top: 20px;
+	padding-top: 30px;
 }
-.instructions .ingredients {
+.container .grey-container .prep {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 90%;
+}
+.container .grey-container .prep p {
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	width: 20%;
+}
+.container .grey-container .description {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.container .grey-container .review {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: 50%;
+	justify-content: center;
+}
+.container .recipe-info {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 0;
+}
+.container .recipe-info .nutri-info {
+	align-items: center;
+	background: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.container .recipe-info .nutri-info h2 {
+	align-self: flex-start;
 }
