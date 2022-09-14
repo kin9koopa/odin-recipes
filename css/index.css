@@ -12,6 +12,7 @@ body {
 	height: 100vh;
 	background: #e0d8b0;
 }
+/* header css */
 header {
 	display: flex;
 	flex-direction: column;
@@ -21,7 +22,8 @@ header {
 	background: url(../imgs/header-food.jpg);
 	background-size: cover;
 	color: white;
-	width: 100%;
+	margin: 0 auto;
+	width: 80%;
 }
 header h1 {
 	font-size: 70px;
@@ -29,85 +31,40 @@ header h1 {
 header h2 {
 	font-size: 40px;
 }
-
-section {
+/* end of header css */
+/* streaming food options */
+#sct-container {
 	align-items: center;
-	height: 100vh;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding-top: 10px;
+	height: 80vh;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 80%;
 }
-section .row {
+#sct-container .food-item {
 	align-items: center;
+	background: red;
 	display: flex;
 	height: 25vh;
-	justify-content: space-evenly;
-	padding: 10px 0;
-	width: 90%;
-}
-section .row:hover .plate {
-	filter: blur(3px);
-	opacity: 0.5;
-	transform: scale(0.98);
-	box-shadow: none;
-}
-section .row:hover .plate:hover {
-	transform: scale(1);
-	filter: blur(0px);
-	opacity: 1;
-	box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
-}
-section .row .plate {
-	align-items: center;
-	color: #ffffff;
-	display: flex;
-	font-size: 50px;
-	font-weight: 600;
-	height: 100%;
 	justify-content: center;
-	width: 45%;
+	width: 49%;
 }
-section .row .plate:hover {
-	scale: 1.1;
+#sct-container .food-item .img-food {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
-.rice-beans {
-	background: url(../imgs/rice-beans.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+#sct-container .food-item .food-name {
+	color: white;
+	font-size: 60px;
+	position: absolute;
 }
-.arroz-pollo {
-	background: url(../imgs/arroz-pollo.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+@media all and (max-width: 1080px) {
+	#sct-container .food-item .food-name {
+		font-size: 40px;
+		inline-size: 120px;
+		overflow-wrap: break-word;
+	}
 }
-.bbq-ribs {
-	background: url(../imgs/bbq-ribs.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.wings {
-	background: url(../imgs/wings.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.hamburguers {
-	background: url(../imgs/hamburguer.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.tacos {
-	background: url(../imgs/tacos.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.guacamole {
-	background: url(../imgs/guacamole.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.red-salsa {
-	background: url(../imgs/red-salsa.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+/* end streaming food options */
