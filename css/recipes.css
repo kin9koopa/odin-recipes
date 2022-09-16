@@ -1,86 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap');
 * {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 }
 html {
 	font-family: 'Signika Negative', sans-serif;
 	line-height: 1.6rem;
+	font-size: 20px;
 }
-body {
+
+#sct-recipe {
 	align-items: center;
-	background: rgba(0, 0, 0, 0.096);
+	background: rgb(196, 188, 188);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-}
-.container {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	line-height: 2.2em;
-	justify-content: center;
 	height: 100%;
-	width: 80%;
+	line-height: 2.2em;
+	justify-content: flex-start;
+	margin: 20px auto;
+	padding: 25px 0;
+	width: 90%;
 }
-.container .grey-container img {
+#sct-recipe .back-home {
 	align-items: center;
 	display: flex;
-	border-radius: 50%;
-	justify-content: center;
-	height: auto;
-	width: 250px;
+	align-self: flex-start;
+	padding-left: 25px;
 }
-.container .grey-container {
+#sct-recipe .img-container {
+	width: 40%;
+}
+#sct-recipe .img-container img {
+	border-radius: 50%;
+	height: 500px;
+	width: 100%;
+}
+#sct-recipe .food-review {
 	align-items: center;
-	border: 5px solid #f4f4f4;
-	background: #f4f4f4;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 20px;
-	padding-top: 30px;
 }
-.container .grey-container .prep {
+#sct-recipe .food-review .stars {
+	color: gold;
+	font-size: 30px;
+}
+#sct-recipe .food-review p {
+	font-weight: bold;
+}
+#sct-recipe h1 {
+	font-size: 58px;
+	font-weight: 600;
+	margin: 20px 0;
+}
+#sct-recipe .prep-info {
 	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 10px;
+	width: 100%;
+}
+#sct-recipe .prep-info p {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+#sct-recipe .description {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	inline-size: 600px;
+	overflow-wrap: break-word;
+}
+#sct-recipe .ingredients {
+	align-items: center;
+	background-color: rgb(126, 126, 126);
 	display: flex;
 	justify-content: center;
 	width: 90%;
 }
-.container .grey-container .prep p {
-	align-items: center;
-	flex-direction: column;
-	display: flex;
-	justify-content: center;
-	width: 20%;
-}
-.container .grey-container .description {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	width: 100%;
-}
-.container .grey-container .review {
+#sct-recipe .instructions {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 90%;
 }
-.container .recipe-info {
-	align-items: flex-start;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 20px 0;
-}
-.container .recipe-info .nutri-info {
-	align-items: center;
-	background: #f4f4f4;
-	display: flex;
-	justify-content: center;
-	width: 100%;
-}
-.container .recipe-info .nutri-info h2 {
+#sct-recipe .instructions h2 {
 	align-self: flex-start;
+}
+#sct-recipe .nutri-info {
+	background-color: rgb(126, 126, 126);
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	margin-bottom: 20px;
+	width: 90%;
+}
+#sct-recipe .nutri-info .nutri-sct {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 45%;
+}
+#sct-recipe h2 {
+	font-size: 38px;
+	font-weight: 600;
+	padding: 10px 0;
 }

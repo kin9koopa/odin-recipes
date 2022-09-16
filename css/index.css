@@ -3,6 +3,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 html {
 	font-family: 'Signika Negative', sans-serif;
@@ -44,7 +45,6 @@ header h2 {
 }
 #sct-container .food-item {
 	align-items: center;
-	background: red;
 	display: flex;
 	height: 25vh;
 	justify-content: center;
@@ -61,6 +61,12 @@ header h2 {
 	position: absolute;
 }
 @media all and (max-width: 1080px) {
+	header h1 {
+		font-size: 50px;
+	}
+	header h2 {
+		font-size: 30px;
+	}
 	#sct-container .food-item .food-name {
 		font-size: 40px;
 		inline-size: 120px;
